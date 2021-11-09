@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePad</title>
+    <link rel="stylesheet" href="notepad.css">
+    <script src="notepad.js"></script>
+</head>
+<body onload="onload_text()">
+    <form name="controls" id="controls">
+        <h1>NotePad</h1>
+        <select>
+            <option>Fonts</option>
+            <option>Arial Black</option>
+        </select>
+        <input type="button" value="B" onclick="bold_click()">
+        <input type="button" value="i" onclick="italic_click()">
+        <input type="button" value="u" onclick="underline_click()" style="text-decoration: underline;">
+        <input type="button" value="N" onclick="normal_click()"><br>
+
+        <textarea name="output" id="output"></textarea><br>
+
+        <p><input type="reset" value="clear"></p>
+
+    </form>
+    
+</body>
+</html>
