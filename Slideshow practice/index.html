@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div id="slide-container">
+    <h1>Slide Show</h1>
+    <div id="slide-show">
+      <img src="/static/image/a.jpg alt="Image 1">            
+    </div>
+    <button class="btn1" onclick="btnLeft()"><</button>
+    <button class="btn2" onclick="btnRight()">></button> 
+    <p></p>
+    
+  </div>
+
+  <script>
+    
+    var slide=document.getElementById("slide-show");
+    var image=["/static/image/f","/static/image/b","/static/image/c","/static/image/d","/static/image/c"];
+    var i=image.length;
+
+    function btnRight(){
+      if(i<image.length){
+        i=i+1;
+      }else{
+        i=1;
+        
+      }slide.innerHTML="<img src="+image[i-1]+".jpg>";
+    }setInterval(btnRight,2000); // Automatic SlideShow
+
+    function btnLeft(){
+      if(i<image.length+1 && i>1){
+        i=i-1
+
+      }else{
+        i=image.length;
+
+      }slide.innerHTML="<img src="+image[i-1]+".jpg>";
+    }
+    
+  </script>
+    
+</body>
+</html>
