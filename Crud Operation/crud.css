@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 100%;
+}
+#container1{
+    width: 30%;
+    border: 2px solid green;
+    padding: 10px;
+    text-align: center;
+    background-color: grey;
+    font-size: 20px;
+}
+form input{
+    padding: 10px 80px;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-action-buttons input{
+    padding: 10px 20px;
+    background: turquoise;
+}
+#container2{
+    width: 70%;
+    border: 2px solid yellow;
+    background-color:rosybrown;
+    font-size: 20px;
+    text-align: center;
+    color: gold;
+    
+}
+#container2 th{
+    border: 1px solid greenyellow;
+}
